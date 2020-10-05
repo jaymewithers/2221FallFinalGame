@@ -6,7 +6,7 @@ public class CharacterMover : MonoBehaviour
     private CharacterController controller;
     private Vector3 movement;
 
-    public float rotateSpeed = 120f, gravity = -9.81f;
+    public float gravity = -9.81f;
     private float yVar;
 
     public FloatData normalSpeed, fastSpeed;
@@ -31,10 +31,9 @@ public class CharacterMover : MonoBehaviour
         }
         
         var vInput = Input.GetAxis("Vertical") * moveSpeed.value;
-        movement.Set(vInput, yVar, 0);
 
-        var hInput = Input.GetAxis("Horizontal") * Time.deltaTime * rotateSpeed;
-        transform.Rotate(0, hInput, 0);
+        var hInput = Input.GetAxis("Horizontal") * moveSpeed.value;
+        movement.Set(hInput, yVar, vInput);
 
         yVar += gravity * Time.deltaTime;
         
