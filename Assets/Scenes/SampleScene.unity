@@ -538,8 +538,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotateSpeed: 120
   gravity: -9.81
+  energyChange: 0.1
   normalSpeed: {fileID: 11400000, guid: 018541310ce97b64584f03d6211594cb, type: 2}
   fastSpeed: {fileID: 11400000, guid: c6891ae87843ee943bc811a3454df2d8, type: 2}
+  energy: {fileID: 11400000, guid: a823880bc74953b43becc3f2475458d2, type: 2}
+  delayTime: 0.5
 --- !u!23 &499776762
 MeshRenderer:
   m_ObjectHideFlags: 0
