@@ -21,8 +21,10 @@
           <e p="Behaviours" t="Include">
             <e p="CharacterMover.cs" t="Include" />
           </e>
+          <e p="CharacterJump.cs" t="Include" />
           <e p="ScriptableObjects" t="Include">
             <e p="FloatData.cs" t="Include" />
+            <e p="IntData.cs" t="Include" />
           </e>
         </e>
       </e>
