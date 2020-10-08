@@ -538,7 +538,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotateSpeed: 120
   gravity: -9.81
+  jumpForce: 5
   energyChange: 0.1
+  playerJumpCount: {fileID: 11400000, guid: 8b02b8db0622a8b4ab8ed2ed4032d58c, type: 2}
   normalSpeed: {fileID: 11400000, guid: 018541310ce97b64584f03d6211594cb, type: 2}
   fastSpeed: {fileID: 11400000, guid: c6891ae87843ee943bc811a3454df2d8, type: 2}
   energy: {fileID: 11400000, guid: a823880bc74953b43becc3f2475458d2, type: 2}
