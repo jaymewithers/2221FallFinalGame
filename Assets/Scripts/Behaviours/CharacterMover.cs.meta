@@ -3,7 +3,11 @@ guid: 5bd41dc9a5c1ded489d6596a3f25ed7a
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - playerJumpCount: {fileID: 11400000, guid: 8b02b8db0622a8b4ab8ed2ed4032d58c, type: 2}
+  - normalSpeed: {fileID: 11400000, guid: 018541310ce97b64584f03d6211594cb, type: 2}
+  - fastSpeed: {fileID: 11400000, guid: c6891ae87843ee943bc811a3454df2d8, type: 2}
+  - energy: {fileID: 11400000, guid: a823880bc74953b43becc3f2475458d2, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
