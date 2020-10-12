@@ -20,11 +20,24 @@ public class CharacterMover : MonoBehaviour
     {
         controller = GetComponent<CharacterController>();
         moveSpeed = normalSpeed;
+        wfs = new WaitForSeconds(delayTime);
     }
+
+    public bool canRun = true;
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.LeftShift) && energy.value > 0)
+        if (energy.value < 0)
+        {
+            canRun = false;
+            moveSpeed = normalSpeed;
+        }
+        else
+        {
+            canRun = true;
+        }
+        
+        if (Input.GetKeyDown(KeyCode.LeftShift) && canRun)
         {
             moveSpeed = fastSpeed;
             StopCoroutine(EnergyReFill());
@@ -62,15 +75,16 @@ public class CharacterMover : MonoBehaviour
     }
     
     public WaitForFixedUpdate wffu = new WaitForFixedUpdate();
+    private WaitForSeconds wfs;
     public float delayTime = 0.5f;
 
     private IEnumerator EnergyDrain()
     {
-        while (moveSpeed == fastSpeed && energy.value >= 0)
+        while (moveSpeed == fastSpeed && energy.value > 0)
         {
             yield return wffu;
             energy.value -= energyChange;
-            yield return new WaitForSeconds(delayTime);
+            yield return wfs;
         }
     }
 
@@ -80,7 +94,7 @@ public class CharacterMover : MonoBehaviour
         {
             yield return wffu;
             energy.value += energyChange;
-            yield return new WaitForSeconds(delayTime);
+            yield return wfs;
         }
     }
 }
