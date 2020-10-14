@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd6bfad6ea8070149ad32e2422313475, type: 3}
-  m_Name: AimVector
+  m_Script: {fileID: 11500000, guid: 23a55964a35a68f4795d476416101fcd, type: 3}
+  m_Name: RotationDirection
   m_EditorClassIdentifier: 
   value: {x: 0, y: 0, z: 0}
