@@ -2,18 +2,21 @@
 using UnityEngine;
 
 [RequireComponent(typeof(CharacterController))]
-public class CharacterMover : MonoBehaviour
+public class CharacterBehaviour : MonoBehaviour
 {
-    private CharacterController controller;
-    private Vector3 movement;
-
-    public float rotateSpeed = 120f, gravity = -9.81f, jumpForce = 5f, energyChange = 0.1f;
-    private float yVar;
-
     public IntData playerJumpCount;
-    private int jumpCount;
-
     public FloatData normalSpeed, fastSpeed, energy;
+    public float rotateSpeed = 120f, gravity = -9.81f, jumpForce = 5f, energyChange = 0.1f;
+    public bool canRun = true;
+    public WaitForFixedUpdate wffu = new WaitForFixedUpdate();
+    public float delayTime = 0.5f;
+
+    protected CharacterController controller;
+    protected Vector3 movement;
+
+    private WaitForSeconds wfs;
+    private float yVar;
+    private int jumpCount;
     private FloatData moveSpeed;
 
     private void Start()
@@ -23,9 +26,7 @@ public class CharacterMover : MonoBehaviour
         wfs = new WaitForSeconds(delayTime);
     }
 
-    public bool canRun = true;
-
-    private void Update()
+    public void Update()
     {
         if (energy.value < 0)
         {
@@ -74,10 +75,6 @@ public class CharacterMover : MonoBehaviour
         controller.Move(movement * Time.deltaTime);
     }
     
-    public WaitForFixedUpdate wffu = new WaitForFixedUpdate();
-    private WaitForSeconds wfs;
-    public float delayTime = 0.5f;
-
     private IEnumerator EnergyDrain()
     {
         while (moveSpeed == fastSpeed && energy.value > 0)
