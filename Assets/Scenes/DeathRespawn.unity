@@ -135,8 +135,8 @@ GameObject:
   - component: {fileID: 98687969}
   - component: {fileID: 98687968}
   - component: {fileID: 98687967}
-  m_Layer: 0
-  m_Name: Plane
+  m_Layer: 12
+  m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -232,7 +232,7 @@ GameObject:
   - component: {fileID: 859399405}
   - component: {fileID: 859399404}
   - component: {fileID: 859399403}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -266,7 +266,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  delayTime: 1
+  delayTime: 0.01
 --- !u!65 &859399404
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -299,7 +299,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 562e390db90efae4cbd15a2dc5631aca, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -357,7 +357,7 @@ GameObject:
   - component: {fileID: 1623642183}
   - component: {fileID: 1623642182}
   - component: {fileID: 1623642181}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -512,6 +512,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameObj: {fileID: 1623642180}
   health: {fileID: 11400000, guid: 29155d7b1482c694ca5c53f1f5654915, type: 2}
+  playerLives: {fileID: 11400000, guid: 121df0d7630b467449e0e3aef6d4ea74, type: 2}
   spawnPoint: {fileID: 11400000, guid: 86610073bfbbda743ba87a3f45004c5a, type: 2}
 --- !u!4 &1742066463
 Transform:
