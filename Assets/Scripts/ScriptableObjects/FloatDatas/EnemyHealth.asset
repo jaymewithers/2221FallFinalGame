@@ -9,7 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6fabf23d2c366c44ba87d498e5a8203a, type: 3}
-  m_Name: PlayerAmmo
+  m_Script: {fileID: 11500000, guid: 16d7855bb12d1fe4d96ab948bd7d2403, type: 3}
+  m_Name: EnemyHealth
   m_EditorClassIdentifier: 
-  value: 190
+  value: 1
+  lessThanZeroEvent:
+    m_PersistentCalls:
+      m_Calls: []

@@ -16,16 +16,16 @@ TagManager:
   - Player
   - 
   - Enemy
-  - 
+  - EnemyTrigger
+  - EnemyHealthTrigger
   - Ground
-  - 
   - Environment
   - 
   - Ammo
   - 
   - Powers
   - 
-  - 
+  - Empties
   - 
   - 
   - 

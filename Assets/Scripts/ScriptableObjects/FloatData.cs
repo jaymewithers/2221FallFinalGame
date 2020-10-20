@@ -8,6 +8,11 @@ public class FloatData : ScriptableObject
     public float value = 1f;
     public UnityEvent lessThanZeroEvent;
 
+    public void SetValue(float number)
+    {
+        value = number;
+    }
+
     public void UpdateValue(float number)
     {
         value += number;

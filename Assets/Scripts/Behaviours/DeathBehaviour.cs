@@ -11,7 +11,10 @@ public class DeathBehaviour : MonoBehaviour
     {
         if (!(health.value <= 0)) return;
         gameObj.SetActive(false);
-        StartCoroutine(Respawn());
+        if (gameObj.name == "Player")
+        {
+            StartCoroutine(Respawn());
+        }
     }
 
     private IEnumerator Respawn()
@@ -25,11 +28,9 @@ public class DeathBehaviour : MonoBehaviour
             StopCoroutine(Respawn());
         }
 
-        if (lives.value <= 0)
-        {
-            gameObj.SetActive(false);
-            print("Game Over");
-            StopCoroutine(Respawn());
-        }
+        if (gameObj.name != "Player" || !(lives.value <= 0)) yield break;
+        gameObj.SetActive(false);
+        print("Game Over");
+        StopCoroutine(Respawn());
     }
 }
