@@ -490,9 +490,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1742066463}
+  - component: {fileID: 1742066464}
   - component: {fileID: 1742066462}
   m_Layer: 0
-  m_Name: DeathManager
+  m_Name: GameControl
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -512,7 +513,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameObj: {fileID: 1623642180}
   health: {fileID: 11400000, guid: 29155d7b1482c694ca5c53f1f5654915, type: 2}
-  playerLives: {fileID: 11400000, guid: 121df0d7630b467449e0e3aef6d4ea74, type: 2}
+  lives: {fileID: 11400000, guid: 121df0d7630b467449e0e3aef6d4ea74, type: 2}
   spawnPoint: {fileID: 11400000, guid: 86610073bfbbda743ba87a3f45004c5a, type: 2}
 --- !u!4 &1742066463
 Transform:
@@ -528,6 +529,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1742066464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1742066461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06b3177aa9a960a4c8e80db1eb9284f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 29155d7b1482c694ca5c53f1f5654915, type: 2}
+        m_TargetAssemblyTypeName: FloatData, Assembly-CSharp
+        m_MethodName: UpdateValue
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 1
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onEnableEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &2076569202
 GameObject:
   m_ObjectHideFlags: 0
