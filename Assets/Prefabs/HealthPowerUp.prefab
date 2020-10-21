@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 2078759831150709483}
   - component: {fileID: 2078759831150709492}
   - component: {fileID: 2078759831150709493}
-  m_Layer: 16
-  m_Name: Ammo
+  m_Layer: 18
+  m_Name: HealthPowerUp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -61,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2bbd6fef9be838e429de0a3d06f327e1, type: 2}
+  - {fileID: 2100000, guid: 562e390db90efae4cbd15a2dc5631aca, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -111,15 +111,15 @@ MonoBehaviour:
   triggerEnterEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11400000, guid: 39bf7b13f19ef644e833d62acfe25309, type: 2}
-        m_TargetAssemblyTypeName: IntData, Assembly-CSharp
+      - m_Target: {fileID: 11400000, guid: 29155d7b1482c694ca5c53f1f5654915, type: 2}
+        m_TargetAssemblyTypeName: FloatData, Assembly-CSharp
         m_MethodName: UpdateValue
-        m_Mode: 3
+        m_Mode: 4
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 1
-          m_FloatArgument: 1
+          m_FloatArgument: 0.1
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
