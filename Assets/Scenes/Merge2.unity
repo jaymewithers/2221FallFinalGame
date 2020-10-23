@@ -773,7 +773,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &614972933
 MonoBehaviour:
@@ -981,7 +981,6 @@ GameObject:
   - component: {fileID: 717227798}
   - component: {fileID: 717227797}
   - component: {fileID: 717227796}
-  - component: {fileID: 717227795}
   m_Layer: 14
   m_Name: Door
   m_TagString: Untagged
@@ -989,22 +988,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &717227795
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 717227794}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d5f5450c62767b44b071ae649d1f894, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
-  newColor: {r: 0, g: 0, b: 0, a: 0}
-  holdTime: {fileID: 11400000, guid: 67fc6f5aa67dff64db0d0dc229d15372, type: 2}
-  door: {fileID: 0}
 --- !u!65 &717227796
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1693,7 +1676,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1711478881}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77342eb2aed681744bf7bc5d28f569ae, type: 3}
+  m_Script: {fileID: 11500000, guid: 5bd41dc9a5c1ded489d6596a3f25ed7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   playerJumpCount: {fileID: 11400000, guid: 8b02b8db0622a8b4ab8ed2ed4032d58c, type: 2}
@@ -1706,7 +1689,6 @@ MonoBehaviour:
   energyChange: 0.1
   canRun: 1
   delayTime: 0.5
-  pushPower: 10
 --- !u!143 &1711478883
 CharacterController:
   m_ObjectHideFlags: 0
@@ -1800,7 +1782,7 @@ Transform:
   m_Children:
   - {fileID: 2032236440}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1729290129
 GameObject:
