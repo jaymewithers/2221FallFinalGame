@@ -21,4 +21,14 @@ public class StringListData : ScriptableObject
     {
         obj.text = returnValue;
     }
+
+    public void AddToList(string stringObj)
+    {
+        stringList.Add(stringObj);
+    }
+
+    public void ClearList(string stringObj)
+    {
+        stringList.Clear();
+    }
 }
