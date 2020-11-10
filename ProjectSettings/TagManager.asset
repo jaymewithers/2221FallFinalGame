@@ -21,7 +21,7 @@ TagManager:
   - Ground
   - Environment
   - MovableObjects
-  - Ammo
+  - CoverObjects
   - 
   - Powers
   - 
@@ -30,7 +30,7 @@ TagManager:
   - Cars
   - 
   - HideTriggers
-  - 
+  - Ammo
   - 
   - 
   - 
