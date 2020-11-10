@@ -22,7 +22,7 @@ TagManager:
   - Environment
   - MovableObjects
   - CoverObjects
-  - 
+  - TipOverTrigger
   - Powers
   - 
   - Empties
