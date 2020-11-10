@@ -14,7 +14,7 @@ TagManager:
   - 
   - 
   - Player
-  - 
+  - PlayerCamFollow
   - Enemy
   - EnemyTrigger
   - EnemyHealthTrigger

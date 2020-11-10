@@ -23,6 +23,7 @@
             <e p="CamBehaviour.cs" t="Include" />
             <e p="CharacterScripts" t="Include">
               <e p="CharacterBehaviour.cs" t="Include" />
+              <e p="CharacterBehaviourNoJump.cs" t="Include" />
               <e p="CharacterBehaviourWithKnockBack.cs" t="Include" />
             </e>
             <e p="DeathBehaviour.cs" t="Include" />
