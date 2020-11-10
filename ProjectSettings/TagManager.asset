@@ -20,7 +20,7 @@ TagManager:
   - EnemyHealthTrigger
   - Ground
   - Environment
-  - 
+  - MovableObjects
   - Ammo
   - 
   - Powers
