@@ -20,23 +20,23 @@ TagManager:
   - EnemyHealthTrigger
   - Ground
   - Environment
-  - MovableObjects
+  - HideTriggers
   - CoverObjects
-  - TipOverTrigger
   - CoverTrigger
-  - 
-  - Empties
+  - MovableObjects
+  - KnockOverTrigger
+  - EmptyTriggers
   - 
   - Cars
   - 
-  - HideTriggers
-  - Ammo
+  - 
+  - Bullets
+  - 
+  - Powers
   - 
   - 
   - 
-  - 
-  - 
-  - 
+  - Empties
   m_SortingLayers:
   - name: Default
     uniqueID: 0
