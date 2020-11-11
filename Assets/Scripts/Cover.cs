@@ -3,9 +3,9 @@ using UnityEngine.Events;
 
 public class Cover : MonoBehaviour
 {
-    public bool canUse;
+    public bool canUse, canLetGo;
     public FloatData coverData;
-    public Transform player;
+    public Transform player, obj;
     public Vector3 offset, restOffset;
     public UnityEvent disableEvent, enableEvent;
     
@@ -13,42 +13,46 @@ public class Cover : MonoBehaviour
     {
         coverData.value = 0f;
         canUse = false;
+        canLetGo = false;
     }
-    
+
     private void Update()
     {
         if (canUse && Input.GetKeyDown(KeyCode.X))
         {
+            print("Cover");
             coverData.value = 1f;
             disableEvent.Invoke();
-            var transform1 = transform;
-            transform1.position = player.position + offset;
-            transform1.parent = player;
-            canUse = false;
+            obj.transform.position = player.position + offset;
+            obj.parent = player;
+            canLetGo = true;
         }
 
-        if (Input.GetKeyUp(KeyCode.X))
+        if (Input.GetKeyUp(KeyCode.X) && canLetGo)
         {
+            print("Let go");
             coverData.value = 0f;
-            var transform1 = transform;
-            transform1.parent = null;
-            transform1.position = player.position + restOffset;
+            obj.parent = null;
+            obj.position += restOffset;
         }
     }
+    
     private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Player"))
+    { 
+        if (other.CompareTag("Player")) 
         {
-            canUse = true;
-        }
+            canUse = true; 
+            Debug.Log("Triggered");
+        } 
     }
-
+    
     private void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("Player"))
         {
             enableEvent.Invoke();
             canUse = false;
+            canLetGo = false;
         }
     }
 }

@@ -23,7 +23,7 @@ TagManager:
   - MovableObjects
   - CoverObjects
   - TipOverTrigger
-  - Powers
+  - CoverTrigger
   - 
   - Empties
   - 
