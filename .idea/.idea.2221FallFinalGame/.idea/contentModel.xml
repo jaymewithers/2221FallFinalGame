@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Owner\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Owner\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_2221FallFinalGame.1887133301.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Owner\OneDrive\Documents\gitkraken\Sophomore year\2221FallFinalGame" t="IncludeRecursive">
+      <e p="2221FallFinalGame.sln" t="IncludeFlat" />
+      <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Plugins" t="Include">
+          <e p="GitHub" t="Include">
+            <e p="Editor" t="Include">
+              <e p="credits.txt" t="Include" />
+              <e p="eula.txt" t="Include" />
+              <e p="ExtensionLoader.cs" t="Include" />
+              <e p="UnityAPIWrapper.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="Behaviours" t="Include">
+            <e p="ApplyForce.cs" t="Include" />
+            <e p="CamBehaviour.cs" t="Include" />
+            <e p="CharacterScripts" t="Include">
+              <e p="CharacterBehaviour.cs" t="Include" />
+              <e p="CharacterBehaviourWithKnockBack.cs" t="Include" />
+            </e>
+            <e p="DeathBehaviour.cs" t="Include" />
+            <e p="ImageBehaviour.cs" t="Include" />
+            <e p="InstancerBehaviour.cs" t="Include" />
+            <e p="MonoEventsBehaviour.cs" t="Include" />
+            <e p="PlayerCamFollow.cs" t="Include" />
+            <e p="PushPull.cs" t="Include" />
+            <e p="SelfDestruct.cs" t="Include" />
+            <e p="ShootingBehaviour.cs" t="Include" />
+            <e p="TextBehaviour.cs" t="Include" />
+            <e p="TriggerEvents.cs" t="Include" />
+            <e p="TurretBehaviour.cs" t="Include" />
+          </e>
+          <e p="Cover.cs" t="Include" />
+          <e p="KnockOver.cs" t="Include" />
+          <e p="ScriptableObjects" t="Include">
+            <e p="FloatData.cs" t="Include" />
+            <e p="IntData.cs" t="Include" />
+            <e p="StringListData.cs" t="Include" />
+            <e p="Vector3Data.cs" t="Include" />
+          </e>
+          <e p="TriggerSceneClass" t="Include">
+            <e p="TriggerColorBehaviour.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>

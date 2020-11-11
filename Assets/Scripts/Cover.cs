@@ -20,7 +20,6 @@ public class Cover : MonoBehaviour
     {
         if (canUse && Input.GetKeyDown(KeyCode.X))
         {
-            print("Cover");
             coverData.value = 1f;
             disableEvent.Invoke();
             obj.transform.position = player.position + offset;
@@ -28,31 +27,24 @@ public class Cover : MonoBehaviour
             canLetGo = true;
         }
 
-        if (Input.GetKeyUp(KeyCode.X) && canLetGo)
-        {
-            print("Let go");
-            coverData.value = 0f;
-            obj.parent = null;
-            obj.position += restOffset;
-        }
+        if (!Input.GetKeyUp(KeyCode.X) || !canLetGo) return;
+        coverData.value = 0f;
+        obj.parent = null;
+        obj.position += restOffset;
     }
     
     private void OnTriggerEnter(Collider other)
     { 
         if (other.CompareTag("Player")) 
         {
-            canUse = true; 
-            Debug.Log("Triggered");
+            canUse = true;
         } 
     }
     
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Player"))
-        {
-            enableEvent.Invoke();
-            canUse = false;
-            canLetGo = false;
-        }
+        enableEvent.Invoke();
+        canUse = false;
+        canLetGo = false;
     }
 }
