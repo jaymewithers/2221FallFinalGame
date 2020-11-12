@@ -28,28 +28,29 @@
               <e p="CharacterBehaviour.cs" t="Include" />
               <e p="CharacterBehaviourWithKnockBack.cs" t="Include" />
             </e>
+            <e p="Cover.cs" t="Include" />
             <e p="DeathBehaviour.cs" t="Include" />
             <e p="ImageBehaviour.cs" t="Include" />
             <e p="InstancerBehaviour.cs" t="Include" />
+            <e p="KnockOver.cs" t="Include" />
             <e p="MonoEventsBehaviour.cs" t="Include" />
             <e p="PlayerCamFollow.cs" t="Include" />
             <e p="PushPull.cs" t="Include" />
             <e p="SelfDestruct.cs" t="Include" />
             <e p="ShootingBehaviour.cs" t="Include" />
+            <e p="SpawnPointBehaviour.cs" t="Include" />
             <e p="TextBehaviour.cs" t="Include" />
             <e p="TriggerEvents.cs" t="Include" />
             <e p="TurretBehaviour.cs" t="Include" />
           </e>
           <e p="Counter.cs" t="Include" />
-          <e p="Cover.cs" t="Include" />
-          <e p="KnockOver.cs" t="Include" />
+          <e p="EndingCheck.cs" t="Include" />
           <e p="ScriptableObjects" t="Include">
             <e p="FloatData.cs" t="Include" />
             <e p="IntData.cs" t="Include" />
             <e p="StringListData.cs" t="Include" />
             <e p="Vector3Data.cs" t="Include" />
           </e>
-          <e p="SpawnPointBehaviour.cs" t="Include" />
           <e p="TriggerSceneClass" t="Include">
             <e p="TriggerColorBehaviour.cs" t="Include" />
           </e>
