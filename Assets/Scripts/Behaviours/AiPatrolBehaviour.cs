@@ -34,4 +34,11 @@ public class AiPatrolBehaviour : MonoBehaviour
             i = (i + 1) % patrolPoints.Count;
         }
     }
+
+    public void ResetPosition(Transform other)
+    {
+        canPatrol = false;
+        StopCoroutine(Patrol());
+        agent.destination = other.position;
+    }
 }

@@ -21,7 +21,6 @@ public class Counter : MonoBehaviour
     {
         while (timer.value >= 0)
         {
-            print("Running");
             yield return wfs;
             timer.value--;
         }

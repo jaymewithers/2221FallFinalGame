@@ -14,29 +14,29 @@ TagManager:
   - 
   - 
   - Player
-  - PlayerCamFollow
+  - TriggeredByPlayer
+  - 
   - Enemy
-  - EnemyTrigger
-  - EnemyHealthTrigger
+  - DamageToEnemyTrigger
   - Ground
   - Environment
-  - HideTriggers
-  - CoverObjects
-  - CoverTrigger
-  - MovableObjects
-  - KnockOverTrigger
-  - EmptyTriggers
-  - SpecialGarbageCanTrigger
-  - SpecialGarbageCan
-  - Cars
-  - CounterTriggers
-  - Bullets
-  - StartTaskTriggers
-  - Powers
-  - NavMeshPlanes
-  - EndTaskTriggers
   - 
-  - Empties
+  - CoverObjects
+  - MovableObjects
+  - 
+  - Cars
+  - 
+  - Bullets
+  - 
+  - Powers
+  - 
+  - 
+  - 
+  - 
+  - AiNonEnemy
+  - Navmesh
+  - 
+  - Nothing
   m_SortingLayers:
   - name: Default
     uniqueID: 0
