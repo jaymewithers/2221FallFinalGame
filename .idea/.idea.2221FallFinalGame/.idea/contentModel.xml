@@ -20,6 +20,8 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="Behaviours" t="Include">
+            <e p="AiBehaviour.cs" t="Include" />
+            <e p="AiPatrolBehaviour.cs" t="Include" />
             <e p="ApplyForce.cs" t="Include" />
             <e p="CamBehaviour.cs" t="Include" />
             <e p="CharacterScripts" t="Include">
@@ -38,6 +40,7 @@
             <e p="TriggerEvents.cs" t="Include" />
             <e p="TurretBehaviour.cs" t="Include" />
           </e>
+          <e p="Counter.cs" t="Include" />
           <e p="Cover.cs" t="Include" />
           <e p="KnockOver.cs" t="Include" />
           <e p="ScriptableObjects" t="Include">
@@ -46,6 +49,7 @@
             <e p="StringListData.cs" t="Include" />
             <e p="Vector3Data.cs" t="Include" />
           </e>
+          <e p="SpawnPointBehaviour.cs" t="Include" />
           <e p="TriggerSceneClass" t="Include">
             <e p="TriggerColorBehaviour.cs" t="Include" />
           </e>

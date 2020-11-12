@@ -26,15 +26,15 @@ TagManager:
   - MovableObjects
   - KnockOverTrigger
   - EmptyTriggers
-  - 
+  - SpecialGarbageCanTrigger
+  - SpecialGarbageCan
   - Cars
-  - 
-  - 
+  - CounterTriggers
   - Bullets
-  - 
+  - StartTaskTriggers
   - Powers
-  - 
-  - 
+  - NavMeshPlanes
+  - EndTaskTriggers
   - 
   - Empties
   m_SortingLayers:
