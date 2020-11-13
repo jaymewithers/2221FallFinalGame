@@ -9,7 +9,7 @@ public class AiPatrolBehaviour : MonoBehaviour
     private readonly WaitForFixedUpdate wffu = new WaitForFixedUpdate();
     private NavMeshAgent agent;
     public List<Transform> patrolPoints;
-    private bool canHunt, canPatrol;
+    private bool canPatrol;
     private int i;
 
     private void Start()
