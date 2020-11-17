@@ -17,6 +17,7 @@ public class NpcShootingBehaviour : MonoBehaviour
     {
         yield return wfs;
         Instantiate(prefab, instancer.position, instancer.rotation);
+        prefab.transform.position = other.transform.position;
     }
 
     private void OnTriggerExit(Collider other)

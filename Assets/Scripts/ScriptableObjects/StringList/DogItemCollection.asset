@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 066b013956e2460428b37e9f04b3796c, type: 3}
   m_Name: DogItemCollection
   m_EditorClassIdentifier: 
-  stringList: []
+  stringList:
+  - Fetching
