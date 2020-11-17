@@ -1,27 +1,11 @@
-﻿using System.Collections;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class NpcShootingBehaviour : MonoBehaviour
 {
-    public GameObject prefab;
-    public Transform instancer;
-    private WaitForSeconds wfs;
-    public float holdTime = 0.1f;
-
-    private void Start()
-    {
-        wfs = new WaitForSeconds(holdTime);
-    }
-
-    private IEnumerator OnTriggerEnter(Collider other)
-    {
-        yield return wfs;
-        Instantiate(prefab, instancer.position, instancer.rotation);
-        prefab.transform.position = other.transform.position;
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        StopCoroutine(OnTriggerEnter(other));
-    }
+   public Transform startPoint, targetPoint;
+   public void InstanceAtTransform(GameObject prefab)
+   {
+      var newInstance = Instantiate(prefab, startPoint.position, Quaternion.identity);
+      newInstance.transform.LookAt(targetPoint.position);
+   }
 }
