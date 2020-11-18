@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class TextBehaviour : MonoBehaviour
 {
     private Text textObj;
-    public IntData intDataObj;
+    public IntData mainIntDataObj, altIntDataObj, currentDataObj;
 
     private void Start()
     {
@@ -14,6 +14,16 @@ public class TextBehaviour : MonoBehaviour
 
     private void Update()
     {
-        textObj.text = intDataObj.value.ToString();
+        textObj.text = currentDataObj.value.ToString();
+    }
+
+    public void MainIntDataToAlt()
+    {
+        currentDataObj = altIntDataObj;
+    }
+
+    public void AltToMainIntData()
+    {
+        currentDataObj = mainIntDataObj;
     }
 }

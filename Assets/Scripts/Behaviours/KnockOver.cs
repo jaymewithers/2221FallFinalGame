@@ -19,19 +19,16 @@ public class KnockOver : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             canKnockOver = true;
-            print("Triggered");
         }
     }
 
     private void Update()
     {
-        if (canKnockOver && knockedOver >= 1 && Input.GetKeyDown(KeyCode.C))
-        {
-            obj.DetachChildren();
-            obj.transform.Rotate(90, 0, 0);
-            spillEvent.Invoke();
-            knockedOver = 0;
-        }
+        if (!canKnockOver || !(knockedOver >= 1) || !Input.GetKeyDown(KeyCode.C)) return;
+        obj.DetachChildren();
+        obj.transform.Rotate(90, 0, 0);
+        spillEvent.Invoke();
+        knockedOver = 0;
     }
 
     private void OnTriggerExit(Collider other)

@@ -51,6 +51,7 @@
             <e p="Debugger.cs" t="Include" />
           </e>
           <e p="EndingCheck.cs" t="Include" />
+          <e p="GameOverCheck.cs" t="Include" />
           <e p="ScriptableObjects" t="Include">
             <e p="FloatData.cs" t="Include" />
             <e p="IntData.cs" t="Include" />

@@ -3,27 +3,42 @@ using UnityEngine.SceneManagement;
 
 public class SceneControl : MonoBehaviour
 {
-    public string sceneName;
+    public string currentScene, mainMenu, gameOver, playScene;
 
-    public void LoadNextScene()
+    public void CurrentToMainScene()
     {
-        SceneManager.LoadScene(sceneName);
+        currentScene = mainMenu;
     }
 
-    public void ResumePlay()
+    public void CurrentToGameOverScene()
     {
-        SceneManager.UnloadSceneAsync(sceneName);
+        currentScene = gameOver;
+    }
+
+    public void CurrentToPlayScene()
+    {
+        currentScene = playScene;
+    }
+    
+    public void LoadScene()
+    {
+        SceneManager.LoadScene(currentScene);
+    }
+
+    public void PlayAndOffloadAdditiveScene()
+    {
+        SceneManager.UnloadSceneAsync(currentScene);
         Time.timeScale = 1;
     }
 
-    public void PausePlay()
+    public void StopAndLoadAdditiveScene()
     {
         Time.timeScale = 0;
-        SceneManager.LoadScene(sceneName, LoadSceneMode.Additive);
+        SceneManager.LoadScene(currentScene, LoadSceneMode.Additive);
     }
 
     public void AdditiveScene()
     {
-        SceneManager.LoadScene(sceneName, LoadSceneMode.Additive);
+        SceneManager.LoadScene(currentScene, LoadSceneMode.Additive);
     }
 }
