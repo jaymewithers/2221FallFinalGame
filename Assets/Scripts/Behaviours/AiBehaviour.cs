@@ -61,4 +61,13 @@ public class AiBehaviour : MonoBehaviour
         canPatrol = false;
         agent.destination = other.position;
     }
+
+    public void StopPatrolAtPosition(Transform other)
+    {
+        canPatrol = false;
+        StopCoroutine(Patrol());
+        canHunt = false;
+        StopCoroutine(Hunt());
+        agent.transform.position = other.position;
+    }
 }

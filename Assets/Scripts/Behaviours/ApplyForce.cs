@@ -3,13 +3,13 @@
 [RequireComponent(typeof(Rigidbody))]
 public class ApplyForce : MonoBehaviour
 {
-    private Rigidbody rbody;
+    private Rigidbody rBody;
     public float force = 500f;
 
     private void Start()
     {
-        rbody = GetComponent<Rigidbody>();
+        rBody = GetComponent<Rigidbody>();
         var forceDirection = new Vector3(force, 0, 0);
-        rbody.AddRelativeForce(forceDirection);
+        rBody.AddRelativeForce(forceDirection);
     }
 }

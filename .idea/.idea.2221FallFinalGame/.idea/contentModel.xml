@@ -21,9 +21,9 @@
         <e p="Scripts" t="Include">
           <e p="Behaviours" t="Include">
             <e p="AiBehaviour.cs" t="Include" />
-            <e p="AiHuntBehaviour.cs" t="Include" />
             <e p="AiPatrolBehaviour.cs" t="Include" />
             <e p="ApplyForce.cs" t="Include" />
+            <e p="ApplyForceToDestination.cs" t="Include" />
             <e p="CamBehaviour.cs" t="Include" />
             <e p="CharacterScripts" t="Include">
               <e p="CharacterBehaviour.cs" t="Include" />
@@ -53,6 +53,7 @@
           </e>
           <e p="EndingCheck.cs" t="Include" />
           <e p="GameOverCheck.cs" t="Include" />
+          <e p="GetTransformOnUpdate.cs" t="Include" />
           <e p="ScriptableObjects" t="Include">
             <e p="FloatData.cs" t="Include" />
             <e p="IntData.cs" t="Include" />
