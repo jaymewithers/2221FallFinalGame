@@ -4,11 +4,11 @@
 public class ApplyForceToDestination : MonoBehaviour
 {
     private Rigidbody rBody;
-    public Vector3Data destination;
 
     private void Start()
     {
         rBody = GetComponent<Rigidbody>();
-        rBody.AddRelativeForce(destination.value);
+        var forceDirection = new Vector3(250, 0,0);
+        rBody.AddRelativeForce(forceDirection);
     }
 }

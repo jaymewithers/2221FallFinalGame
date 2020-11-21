@@ -4,14 +4,14 @@ using UnityEngine.Events;
 public class Cover : MonoBehaviour
 {
     public bool canUse, canLetGo;
-    public FloatData coverData;
+    public IntData coverData;
     public Transform player, obj;
     public Vector3 offset, restOffset;
     public UnityEvent disableEvent, enableEvent;
     
     private void Start()
     {
-        coverData.value = 0f;
+        coverData.value = 0;
         canUse = false;
         canLetGo = false;
     }
@@ -20,7 +20,7 @@ public class Cover : MonoBehaviour
     {
         if (canUse && Input.GetKeyDown(KeyCode.X))
         {
-            coverData.value = 1f;
+            coverData.value = 1;
             disableEvent.Invoke();
             obj.transform.position = player.position + offset;
             obj.parent = player;
@@ -28,7 +28,7 @@ public class Cover : MonoBehaviour
         }
 
         if (!Input.GetKeyUp(KeyCode.X) || !canLetGo) return;
-        coverData.value = 0f;
+        coverData.value = 0;
         obj.parent = null;
         obj.position += restOffset;
     }

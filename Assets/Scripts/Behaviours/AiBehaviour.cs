@@ -8,10 +8,13 @@ public class AiBehaviour : MonoBehaviour
 {
     private readonly WaitForFixedUpdate wffu = new WaitForFixedUpdate();
     private NavMeshAgent agent;
-    public Transform destination;
-    public List<Transform> patrolPoints;
     private bool canHunt, canPatrol;
     private int i;
+    
+    public Transform destination;
+    public IntData coverData;
+    public List<Transform> patrolPoints;
+    
 
     private void Start()
     {
@@ -37,11 +40,15 @@ public class AiBehaviour : MonoBehaviour
     private IEnumerator Hunt()
     {
         canHunt = true;
-        while (canHunt)
+        while (canHunt && coverData.value == 0)
         {
             yield return wffu;
             agent.destination = destination.position;
         }
+
+        if (coverData.value != 1) yield break;
+        canHunt = false;
+        canPatrol = true;
     }
 
     private IEnumerator Patrol()
