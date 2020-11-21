@@ -24,7 +24,7 @@ public class KnockOver : MonoBehaviour
 
     private void Update()
     {
-        if (!canKnockOver || !(knockedOver >= 1) || !Input.GetKeyDown(KeyCode.C)) return;
+        if (!canKnockOver || !(knockedOver >= 1) || !Input.GetKeyDown(KeyCode.X)) return;
         obj.DetachChildren();
         obj.transform.Rotate(90, 0, 0);
         spillEvent.Invoke();

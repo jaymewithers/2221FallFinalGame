@@ -24,18 +24,19 @@
             <e p="AiPatrolBehaviour.cs" t="Include" />
             <e p="ApplyForce.cs" t="Include" />
             <e p="ApplyForceToDestination.cs" t="Include" />
-            <e p="CamBehaviour.cs" t="Include" />
             <e p="CharacterScripts" t="Include">
               <e p="CharacterBehaviour.cs" t="Include" />
               <e p="CharacterBehaviourWithKnockBack.cs" t="Include" />
             </e>
             <e p="CheckOffDisplay.cs" t="Include" />
+            <e p="Counter.cs" t="Include" />
             <e p="Cover.cs" t="Include" />
             <e p="DeathBehaviour.cs" t="Include" />
             <e p="ImageBehaviour.cs" t="Include" />
             <e p="InstancerBehaviour.cs" t="Include" />
             <e p="KnockOver.cs" t="Include" />
             <e p="MonoEventsBehaviour.cs" t="Include" />
+            <e p="NpcShootingBehaviour.cs" t="Include" />
             <e p="PlayerCamFollow.cs" t="Include" />
             <e p="PushPull.cs" t="Include" />
             <e p="SceneControl.cs" t="Include" />
@@ -43,11 +44,11 @@
             <e p="ShootingBehaviour.cs" t="Include" />
             <e p="SpawnPointBehaviour.cs" t="Include" />
             <e p="TextBehaviour.cs" t="Include" />
+            <e p="TimeControl.cs" t="Include" />
             <e p="TriggerEvents.cs" t="Include" />
             <e p="TriggerEventsWithCover.cs" t="Include" />
             <e p="TurretBehaviour.cs" t="Include" />
           </e>
-          <e p="Counter.cs" t="Include" />
           <e p="CoverDataCheck.cs" t="Include" />
           <e p="Debugs" t="Include">
             <e p="Debugger.cs" t="Include" />
@@ -55,16 +56,11 @@
           <e p="EndingCheck.cs" t="Include" />
           <e p="GameOverCheck.cs" t="Include" />
           <e p="GetTransformOnUpdate.cs" t="Include" />
-          <e p="NpcShootingBehaviour.cs" t="Include" />
           <e p="ScriptableObjects" t="Include">
             <e p="FloatData.cs" t="Include" />
             <e p="IntData.cs" t="Include" />
             <e p="StringListData.cs" t="Include" />
             <e p="Vector3Data.cs" t="Include" />
-          </e>
-          <e p="TimeControl.cs" t="Include" />
-          <e p="TriggerSceneClass" t="Include">
-            <e p="TriggerColorBehaviour.cs" t="Include" />
           </e>
         </e>
       </e>

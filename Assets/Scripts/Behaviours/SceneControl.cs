@@ -23,6 +23,7 @@ public class SceneControl : MonoBehaviour
     public void LoadScene()
     {
         SceneManager.LoadScene(currentScene);
+        Time.timeScale = 1;
     }
 
     public void PlayAndOffloadAdditiveScene()

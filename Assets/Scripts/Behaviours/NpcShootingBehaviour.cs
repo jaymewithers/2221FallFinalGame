@@ -6,6 +6,7 @@ public class NpcShootingBehaviour : MonoBehaviour
     public GameObject prefab;
     public Transform instancer;
     public float holdTime;
+    private bool canInstance;
     private WaitForSeconds wfs;
 
     private void Start()
@@ -15,12 +16,16 @@ public class NpcShootingBehaviour : MonoBehaviour
 
     public void CallInstance()
     {
+        canInstance = true;
         StartCoroutine(Instance());
     }
 
     private IEnumerator Instance()
     {
-        Instantiate(prefab, instancer.position, instancer.rotation);
-        yield return wfs;
+        while (canInstance)
+        {
+            Instantiate(prefab, instancer.position, instancer.rotation);
+            yield return wfs;
+        }
     }
 }

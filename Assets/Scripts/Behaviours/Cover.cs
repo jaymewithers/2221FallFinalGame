@@ -18,7 +18,7 @@ public class Cover : MonoBehaviour
 
     private void Update()
     {
-        if (canUse && Input.GetKeyDown(KeyCode.X))
+        if (canUse && Input.GetKeyDown(KeyCode.C))
         {
             coverData.value = 1;
             disableEvent.Invoke();
@@ -27,7 +27,7 @@ public class Cover : MonoBehaviour
             canLetGo = true;
         }
 
-        if (!Input.GetKeyUp(KeyCode.X) || !canLetGo) return;
+        if (!Input.GetKeyUp(KeyCode.C) || !canLetGo) return;
         coverData.value = 0;
         obj.parent = null;
         obj.position += restOffset;

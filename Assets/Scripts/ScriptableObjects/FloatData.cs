@@ -19,6 +19,14 @@ public class FloatData : ScriptableObject
         value += number;
     }
 
+    public void CheckForOver()
+    {
+        if (value >= 1)
+        {
+            value = 1;
+        }
+    }
+
     public void SetImageFillAmount(Image img)
     {
         if (value >= 0 || value <= 1)
