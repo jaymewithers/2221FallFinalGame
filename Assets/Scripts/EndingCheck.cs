@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.Events;
 
 public class EndingCheck : MonoBehaviour
@@ -16,28 +15,18 @@ public class EndingCheck : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        StartCoroutine(EndCheckAnticipation());
-    }
-
-    private IEnumerator EndCheckAnticipation()
-    {
-        Time.timeScale = 0;
         endCheckEvent.Invoke();
-        yield return wfs;
-        EndCheck();
-    }
-
-    private void EndCheck()
-    {
-        switch (goalValue.value)
+        
+        if (goalValue.value == 0)
         {
-            case 0:
-                print("you lose");
-                loseEvent.Invoke();
-                break;
-            case 20:
-                winEvent.Invoke();
-                break;
+            Time.timeScale = 0;
+            loseEvent.Invoke();
+        }
+
+        if (goalValue.value == 20)
+        {
+            Time.timeScale = 0;
+            winEvent.Invoke();
         }
     }
 }
