@@ -25,8 +25,9 @@ public class AiBehaviour : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        if (!other.CompareTag("Player")) return;
         canHunt = true;
-        canPatrol = false;
+        canPatrol = false;  
         StartCoroutine(Hunt());
     }
 

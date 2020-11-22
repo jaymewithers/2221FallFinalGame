@@ -56,12 +56,14 @@
           <e p="EndingCheck.cs" t="Include" />
           <e p="GameOverCheck.cs" t="Include" />
           <e p="GetTransformOnUpdate.cs" t="Include" />
+          <e p="MaxDeathEvent.cs" t="Include" />
           <e p="ScriptableObjects" t="Include">
             <e p="FloatData.cs" t="Include" />
             <e p="IntData.cs" t="Include" />
             <e p="StringListData.cs" t="Include" />
             <e p="Vector3Data.cs" t="Include" />
           </e>
+          <e p="TransformObject.cs" t="Include" />
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />
