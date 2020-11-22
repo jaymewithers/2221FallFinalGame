@@ -47,4 +47,10 @@ public class AiPatrolBehaviour : MonoBehaviour
         canPatrol = false;
         agent.destination = other.position;
     }
+
+    public void EndCoroutine()
+    {
+        canPatrol = false;
+        StopCoroutine(Patrol());
+    }
 }

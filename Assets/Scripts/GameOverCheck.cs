@@ -17,7 +17,7 @@ public class GameOverCheck : MonoBehaviour
 
     private void GameOver()
     {
-        Time.timeScale = 0;
         timeOutEvent.Invoke();
+        Time.timeScale = 0;
     }
 }
