@@ -1,11 +1,14 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UI;
 
 public class EndingCheck : MonoBehaviour
 {
     public IntData goalValue;
-    public UnityEvent endCheckEvent, loseEvent, winEvent;
+    public UnityEvent endCheckEvent;
     public float holdTime;
+    public GameObject winObj, loseObj;
     private WaitForSeconds wfs;
 
     private void Start()
@@ -16,17 +19,21 @@ public class EndingCheck : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         endCheckEvent.Invoke();
-        
+        StartCoroutine(endCheck());
+    }
+
+    private IEnumerator endCheck()
+    {
         if (goalValue.value == 0)
         {
-            Time.timeScale = 0;
-            loseEvent.Invoke();
+            yield return wfs;
+            loseObj.SetActive(true);
         }
 
         if (goalValue.value == 20)
         {
-            Time.timeScale = 0;
-            winEvent.Invoke();
+            yield return wfs;
+            winObj.SetActive(true);
         }
     }
 }
