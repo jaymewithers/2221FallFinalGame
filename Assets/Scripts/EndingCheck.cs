@@ -30,7 +30,7 @@ public class EndingCheck : MonoBehaviour
             loseObj.SetActive(true);
         }
 
-        if (goalValue.value == 20)
+        if (goalValue.value == 18)
         {
             yield return wfs;
             winObj.SetActive(true);

@@ -3,16 +3,11 @@ using UnityEngine.SceneManagement;
 
 public class SceneControl : MonoBehaviour
 {
-    public string currentScene, mainMenu, gameOver, playScene;
+    public string currentScene, mainMenu, playScene;
 
     public void CurrentToMainScene()
     {
         currentScene = mainMenu;
-    }
-
-    public void CurrentToGameOverScene()
-    {
-        currentScene = gameOver;
     }
 
     public void CurrentToPlayScene()
