@@ -39,6 +39,7 @@
             <e p="NpcShootingBehaviour.cs" t="Include" />
             <e p="PlayerCamFollow.cs" t="Include" />
             <e p="PushPull.cs" t="Include" />
+            <e p="QuitGame.cs" t="Include" />
             <e p="SceneControl.cs" t="Include" />
             <e p="SelfDestruct.cs" t="Include" />
             <e p="ShootingBehaviour.cs" t="Include" />
