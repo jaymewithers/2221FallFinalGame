@@ -4,11 +4,11 @@ using UnityEngine;
 public class TurretBehaviour : MonoBehaviour
 {
     public Vector3Data obj;
-    private bool canFollow = true;
-    
+    public IntData coverData;
+   
     private IEnumerator OnTriggerEnter(Collider other)
     {
-        while (canFollow)
+        while (coverData.value == 0)
         {
             yield return new WaitForFixedUpdate();
             Transform transform1;

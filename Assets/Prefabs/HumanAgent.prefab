@@ -382,6 +382,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obj: {fileID: 11400000, guid: fe61b844005cc3744bacef862c4166b1, type: 2}
+  coverData: {fileID: 11400000, guid: 41cd44ba86cee524db8cda8b608a7beb, type: 2}
 --- !u!1 &7179893439734657253
 GameObject:
   m_ObjectHideFlags: 0
@@ -494,3 +495,4 @@ MonoBehaviour:
   prefab: {fileID: 2512967117716662356, guid: ce65f883b9c6f7a4e81344ea575d67e2, type: 3}
   instancer: {fileID: 7179893438215379164}
   holdTime: 1
+  coverData: {fileID: 11400000, guid: 41cd44ba86cee524db8cda8b608a7beb, type: 2}

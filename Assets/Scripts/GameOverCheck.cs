@@ -6,7 +6,8 @@ public class GameOverCheck : MonoBehaviour
 {
     public IntData mainTimer;
     public FloatData health;
-    public UnityEvent timeOutEvent;
+    public StringListData list;
+    public UnityEvent timeOutEvent, itemsEvent, finishedEvent;
     public WaitForSeconds wfs = new WaitForSeconds(0.5f);
     
 
@@ -15,6 +16,16 @@ public class GameOverCheck : MonoBehaviour
         if (mainTimer.value <= 0 || health.value <= 0)
         {
             StartCoroutine(GameOver());
+        }
+
+        switch (list.stringList.Count)
+        {
+            case 8:
+                itemsEvent.Invoke();
+                break;
+            case 18:
+                finishedEvent.Invoke();
+                break;
         }
     }
 
