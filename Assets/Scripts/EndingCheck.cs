@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.UI;
 
 public class EndingCheck : MonoBehaviour
 {
@@ -24,18 +23,16 @@ public class EndingCheck : MonoBehaviour
 
     private IEnumerator endCheck()
     {
-        if (goalValue.value == 0)
+        if (goalValue.value < 18)
         {
             yield return wfs;
             loseObj.SetActive(true);
             lose2Obj.SetActive(true);
         }
 
-        if (goalValue.value == 18)
-        {
-            yield return wfs;
-            winObj.SetActive(true);
-            win2Obj.SetActive(true);
-        }
+        if (goalValue.value != 18) yield break;
+        yield return wfs;
+        winObj.SetActive(true);
+        win2Obj.SetActive(true);
     }
 }
