@@ -58,6 +58,7 @@
           <e p="GameOverCheck.cs" t="Include" />
           <e p="GetTransformOnUpdate.cs" t="Include" />
           <e p="MaxDeathEvent.cs" t="Include" />
+          <e p="NameAndTime.cs" t="Include" />
           <e p="ScriptableObjects" t="Include">
             <e p="FloatData.cs" t="Include" />
             <e p="IntData.cs" t="Include" />
