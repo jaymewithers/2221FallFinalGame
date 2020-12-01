@@ -5,7 +5,7 @@ using UnityEngine.Events;
 public class EndingCheck : MonoBehaviour
 {
     public IntData goalValue;
-    public UnityEvent endCheckEvent;
+    public UnityEvent endCheckEvent, winEvent;
     public float holdTime;
     public GameObject winObj, loseObj, win2Obj, lose2Obj;
     private WaitForSeconds wfs;
@@ -34,5 +34,6 @@ public class EndingCheck : MonoBehaviour
         yield return wfs;
         winObj.SetActive(true);
         win2Obj.SetActive(true);
+        winEvent.Invoke();
     }
 }
