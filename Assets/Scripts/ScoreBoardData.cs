@@ -17,8 +17,8 @@ public class ScoreBoardData : MonoBehaviour
         textObj = GetComponent<Text>();
     }
 
-    public void UpdateList()
+    public void HandleScore()
     {
-        textObj.text = stringObj.value + intObj.value;
+        textObj.text = stringObj.value + intObj;
     }
 }
