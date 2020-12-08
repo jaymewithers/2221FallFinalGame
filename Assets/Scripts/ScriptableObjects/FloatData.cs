@@ -27,6 +27,14 @@ public class FloatData : ScriptableObject
         }
     }
 
+    public void CheckForUnder()
+    {
+        if (value <= 0)
+        {
+            value = 0;
+        }
+    }
+
     public void SetImageFillAmount(Image img)
     {
         if (value >= 0 || value <= 1)
