@@ -308,5 +308,5 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  delayTime: 1
+  delayTime: 0.5
   coverData: {fileID: 11400000, guid: 41cd44ba86cee524db8cda8b608a7beb, type: 2}
