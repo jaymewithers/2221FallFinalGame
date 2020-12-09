@@ -6,6 +6,8 @@ public class PushPull : MonoBehaviour
     private Rigidbody rBody;
     public bool canPickup;
     public Transform player;
+    public FloatData moveSpeed;
+    public IntData isPushing;
 
     private void Start()
     {
@@ -17,6 +19,8 @@ public class PushPull : MonoBehaviour
     {
         if (canPickup && Input.GetKeyDown(KeyCode.Z))
         {
+            isPushing.value = 1;
+            moveSpeed.value = 3;
             var transformObj = transform;
             transformObj.parent = player;
             canPickup = false;
@@ -24,6 +28,8 @@ public class PushPull : MonoBehaviour
 
         if (!Input.GetKeyUp(KeyCode.Z)) return;
         {
+            isPushing.value = 0;
+            moveSpeed.value = 5;
             var transformObj = transform;
             transformObj.parent = null;
         }

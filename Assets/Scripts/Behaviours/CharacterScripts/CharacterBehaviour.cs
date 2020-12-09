@@ -4,7 +4,7 @@ using UnityEngine;
 [RequireComponent(typeof(CharacterController))]
 public class CharacterBehaviour : MonoBehaviour
 {
-    public IntData playerJumpCount;
+    public IntData playerJumpCount, isPushing;
     public FloatData normalSpeed, fastSpeed, energy;
     public float rotateSpeed = 120f, gravity = -9.81f, jumpForce = 5f, energyChange = 0.1f;
     public bool canRun = true;
@@ -24,6 +24,7 @@ public class CharacterBehaviour : MonoBehaviour
         controller = GetComponent<CharacterController>();
         moveSpeed = normalSpeed;
         wfs = new WaitForSeconds(delayTime);
+        isPushing.value = 0;
     }
 
     public void Update()
@@ -38,7 +39,7 @@ public class CharacterBehaviour : MonoBehaviour
             canRun = true;
         }
         
-        if (Input.GetKeyDown(KeyCode.LeftShift) && canRun)
+        if (Input.GetKeyDown(KeyCode.LeftShift) && canRun && isPushing.value == 0)
         {
             moveSpeed = fastSpeed;
             StopCoroutine(EnergyReFill());
