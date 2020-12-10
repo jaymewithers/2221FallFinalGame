@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fabf23d2c366c44ba87d498e5a8203a, type: 3}
   m_Name: PlayerAmmo
   m_EditorClassIdentifier: 
-  value: 68
+  value: 59
