@@ -7,4 +7,9 @@ public class QuitGame : MonoBehaviour
         if (Input.GetKey("escape")) 
             Application.Quit();
     }
+
+    public void EndGame()
+    {
+        Application.Quit();
+    }
 }

@@ -14,4 +14,12 @@ public class IntData : ScriptableObject
     {
         value += number;
     }
+
+    public void CheckForUnder()
+    {
+        if (value <= 0)
+        {
+            value = 0;
+        }
+    }
 }
