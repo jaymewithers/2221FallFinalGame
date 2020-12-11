@@ -196,6 +196,7 @@ GameObject:
   - component: {fileID: 3009817343432964400}
   - component: {fileID: 3009817343432964402}
   - component: {fileID: 1931256213241886694}
+  - component: {fileID: 524405018586963028}
   m_Layer: 9
   m_Name: Squirrel trigger
   m_TagString: Untagged
@@ -245,13 +246,13 @@ MonoBehaviour:
   triggerEnterEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 524405018586963028}
+        m_TargetAssemblyTypeName: EventCoroutine, Assembly-CSharp
+        m_MethodName: Run
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -296,18 +297,6 @@ MonoBehaviour:
   triggerExitEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1931256213241886694}
         m_TargetAssemblyTypeName: UnityEngine.MonoBehaviour, UnityEngine
         m_MethodName: StopAllCoroutines
@@ -322,3 +311,52 @@ MonoBehaviour:
         m_CallState: 2
   delayTime: 0.5
   coverData: {fileID: 11400000, guid: 41cd44ba86cee524db8cda8b608a7beb, type: 2}
+--- !u!114 &524405018586963028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3009817343432964431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4367309ecd1239c44b09ac158139e076, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 405be7f663fc8de4e9e1148ccb4e15a0, type: 2}
+        m_TargetAssemblyTypeName: StringData, Assembly-CSharp
+        m_MethodName: ChangeString
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: c99c2fa4b5780b648b9c979fef04bf0f, type: 2}
+          m_ObjectArgumentAssemblyTypeName: StringData, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  middleEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 405be7f663fc8de4e9e1148ccb4e15a0, type: 2}
+        m_TargetAssemblyTypeName: StringData, Assembly-CSharp
+        m_MethodName: ChangeString
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 970c0b891e1c04148986ccae640b60e6, type: 2}
+          m_ObjectArgumentAssemblyTypeName: StringData, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  secondMiddleEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  endEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  holdTime: 2

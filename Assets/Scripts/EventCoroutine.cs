@@ -4,7 +4,7 @@ using UnityEngine.Events;
 
 public class EventCoroutine : MonoBehaviour
 {
-   public UnityEvent startEvent, middleEvent, endEvent;
+   public UnityEvent startEvent, middleEvent, secondMiddleEvent, endEvent;
    public float holdTime;
    private WaitForSeconds wfs;
 
@@ -23,6 +23,8 @@ public class EventCoroutine : MonoBehaviour
       startEvent.Invoke();
       yield return wfs;
       middleEvent.Invoke();
+      yield return wfs;
+      secondMiddleEvent.Invoke();
       yield return wfs;
       endEvent.Invoke();
    }
