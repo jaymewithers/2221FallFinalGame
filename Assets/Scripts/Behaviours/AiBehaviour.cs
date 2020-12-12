@@ -35,6 +35,7 @@ public class AiBehaviour : MonoBehaviour
     {
         canHunt = false;
         canPatrol = true;
+        StopCoroutine(Hunt());
         StartCoroutine(Patrol());
     }
 
